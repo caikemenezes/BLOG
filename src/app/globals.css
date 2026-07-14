@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --parchment: #f2ead9;
+  --parchment-dark: #e8dcc2;
+  --ink: #1a1611;
+  --ink-soft: #4a4137;
+  --gold: #c69a2f;
+  --gold-dark: #a67f22;
+  --footer-bg: #17140f;
+  --footer-fg: #e8dcc2;
+}
+
+@theme inline {
+  --color-parchment: var(--parchment);
+  --color-parchment-dark: var(--parchment-dark);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-gold: var(--gold);
+  --color-gold-dark: var(--gold-dark);
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-fg: var(--footer-fg);
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  --font-display: var(--font-anton);
+}
+
+body {
+  background: var(--parchment);
+  color: var(--ink);
+}
