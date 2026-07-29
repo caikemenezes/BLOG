@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { PostMeta } from "@/lib/posts";
 import { getCategory } from "@/lib/categories";
@@ -19,9 +20,17 @@ export default function RecentArticles({ posts }: { posts: PostMeta[] }) {
             <article key={post.slug} className="flex gap-5 sm:gap-6">
               <Link
                 href={`/artigos/${post.slug}`}
-                className="flex h-24 w-24 shrink-0 items-center justify-center rounded bg-footer-bg text-3xl text-gold sm:h-32 sm:w-32"
+                className="flex h-24 w-24 shrink-0 items-center justify-center rounded bg-parchment-dark p-4 sm:h-32 sm:w-32"
               >
-                {category?.icon}
+                {category?.icon && (
+                  <Image
+                    src={category.icon}
+                    alt=""
+                    width={64}
+                    height={64}
+                    className="h-full w-full object-contain"
+                  />
+                )}
               </Link>
               <div className="flex flex-col justify-center">
                 <span className="text-xs font-bold uppercase tracking-wide text-gold-dark">

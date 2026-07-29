@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { categories } from "@/lib/categories";
 
@@ -23,8 +24,14 @@ export default function CategoryGrid() {
             href={`/categorias/${category.slug}`}
             className="group flex flex-col items-center gap-3 text-center"
           >
-            <span className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-ink/20 bg-parchment text-2xl transition group-hover:border-gold group-hover:bg-gold/10">
-              {category.icon}
+            <span className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-ink/20 bg-parchment p-2.5 transition group-hover:border-gold group-hover:bg-gold/10">
+              <Image
+                src={category.icon}
+                alt=""
+                width={48}
+                height={48}
+                className="h-full w-full object-contain"
+              />
             </span>
             <span className="text-xs font-semibold uppercase tracking-wide text-ink-soft group-hover:text-ink">
               {category.name}

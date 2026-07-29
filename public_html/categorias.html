@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Categorias — Arca de Maria</title>
+  <meta name="description" content="Explore todas as categorias de conteúdo católico do Arca de Maria." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    .cat-section {
+      padding: 40px 0;
+      border-bottom: 1px solid rgba(26, 22, 17, 0.1);
+      scroll-margin-top: 24px;
+    }
+    .cat-section:last-child {
+      border-bottom: none;
+    }
+    .cat-heading {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .cat-heading img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+    .cat-heading h2 {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      margin: 0;
+      color: var(--ink);
+    }
+    .cat-articles {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .cat-articles a {
+      font-size: 15px;
+      color: var(--ink-soft);
+      transition: color 0.2s;
+    }
+    .cat-articles a:hover {
+      color: var(--gold-dark);
+    }
+    .cat-empty {
+      margin-top: 16px;
+      font-size: 14px;
+      color: var(--ink-soft);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="simple-page" style="max-width: 56rem">
+    <h1>Categorias</h1>
+    <p>Explore nosso conteúdo organizado por temas de formação católica.</p>
+
+    <section id="historia-da-igreja" class="cat-section">
+      <div class="cat-heading">
+        <img src="/img/icons/historia-da-igreja.png" alt="" />
+        <h2>História da Igreja</h2>
+      </div>
+      <div class="cat-articles">
+        <a href="/artigos/primeiros-cristaos-perseguicoes-imperio-romano.html">
+          Os primeiros cristãos e as perseguições no Império Romano
+        </a>
+      </div>
+    </section>
+
+    <section id="doutrina-catolica" class="cat-section">
+      <div class="cat-heading">
+        <img src="/img/icons/doutrina-catolica.png" alt="" />
+        <h2>Doutrina Católica</h2>
+      </div>
+      <p class="cat-empty">Novos artigos em breve nesta categoria.</p>
+    </section>
+
+    <section id="biblia" class="cat-section">
+      <div class="cat-heading">
+        <img src="/img/icons/biblia.png" alt="" />
+        <h2>Bíblia</h2>
+      </div>
+      <div class="cat-articles">
+        <a href="/artigos/quem-foi-moises.html">Quem foi Moisés? História, missão e legado</a>
+      </div>
+    </section>
+
+    <section id="nossa-senhora" class="cat-section">
+      <div class="cat-heading">
+        <img src="/img/icons/nossa-senhora.png" alt="" />
+        <h2>Nossa Senhora</h2>
+      </div>
+      <p class="cat-empty">Novos artigos em breve nesta categoria.</p>
+    </section>
+
+    <section id="vida-dos-santos" class="cat-section">
+      <div class="cat-heading">
+        <img src="/img/icons/vida-dos-santos.png" alt="" />
+        <h2>Vida dos Santos</h2>
+      </div>
+      <div class="cat-articles">
+        <a href="/artigos/sao-francisco-de-assis.html">São Francisco de Assis: o homem que abraçou a pobreza</a>
+      </div>
+    </section>
+
+    <section id="liturgia-e-sacramentos" class="cat-section">
+      <div class="cat-heading">
+        <img src="/img/icons/liturgia-e-sacramentos.png" alt="" />
+        <h2>Liturgia e Sacramentos</h2>
+      </div>
+      <div class="cat-articles">
+        <a href="/artigos/partes-da-santa-missa.html">Entenda cada parte da Santa Missa e o seu profundo significado</a>
+      </div>
+    </section>
+
+    <section id="vida-espiritual" class="cat-section">
+      <div class="cat-heading">
+        <img src="/img/icons/vida-espiritual.png" alt="" />
+        <h2>Vida Espiritual</h2>
+      </div>
+      <p class="cat-empty">Novos artigos em breve nesta categoria.</p>
+    </section>
+
+    <section id="formacao-catolica" class="cat-section">
+      <div class="cat-heading">
+        <img src="/img/icons/formacao-catolica.png" alt="" />
+        <h2>Formação Católica</h2>
+      </div>
+      <p class="cat-empty">Novos artigos em breve nesta categoria.</p>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="/js/include.js"></script>
+</body>
+</html>
