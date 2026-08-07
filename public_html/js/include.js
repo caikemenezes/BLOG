@@ -71,7 +71,51 @@ function loadPartial(selector, url, afterInsert) {
     });
 }
 
+function initHeroCarousel() {
+  const hero = document.getElementById("hero-carousel");
+  if (!hero) return;
+
+  const slides = Array.from(hero.querySelectorAll(".hero-slide"));
+  const dots = Array.from(hero.querySelectorAll(".hero-dot"));
+  const prevBtn = hero.querySelector(".hero-arrow-prev");
+  const nextBtn = hero.querySelector(".hero-arrow-next");
+  let current = Math.max(0, slides.findIndex((s) => s.classList.contains("is-active")));
+  let timer;
+
+  function goTo(index) {
+    const next = (index + slides.length) % slides.length;
+    slides[current].classList.remove("is-active");
+    dots[current]?.classList.remove("is-active");
+    current = next;
+    slides[current].classList.add("is-active");
+    dots[current]?.classList.add("is-active");
+  }
+
+  function restartAutoplay() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), 6000);
+  }
+
+  prevBtn?.addEventListener("click", () => {
+    goTo(current - 1);
+    restartAutoplay();
+  });
+  nextBtn?.addEventListener("click", () => {
+    goTo(current + 1);
+    restartAutoplay();
+  });
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      goTo(i);
+      restartAutoplay();
+    });
+  });
+
+  restartAutoplay();
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  initHeroCarousel();
   Promise.all([
     loadPartial("#site-header", "/partials/header.html", markActiveNavLink),
     loadPartial("#site-footer", "/partials/footer.html", () => {

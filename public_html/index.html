@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Arca de Maria — Fé, verdade e história para fortalecer sua alma</title>
+  <title>Arca de Maria — Formação Católica para Toda a Vida</title>
   <meta
     name="description"
     content="A maior biblioteca digital de formação católica em português: história da Igreja, doutrina, Bíblia, Nossa Senhora e vida dos santos."
@@ -11,201 +11,386 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/home.css" />
 </head>
-<body>
-  <div id="site-header"></div>
+<body class="home2">
+
+  <header class="h2-header">
+    <div class="h2-container h2-header-row">
+      <a href="/" class="h2-brand">
+        <img src="/img/home/logo-ship.png" alt="Arca de Maria" />
+        <span>
+          <span class="h2-brand-name">Arca de Maria</span>
+          <span class="h2-brand-tagline">Formação católica para toda a vida</span>
+        </span>
+      </a>
+
+      <nav class="h2-nav" id="h2-nav">
+        <a href="/" class="is-active">Início</a>
+        <a href="#">Jornadas</a>
+        <a href="#">Academia</a>
+        <a href="#">Documentários</a>
+        <a href="/artigos.html">Biblioteca</a>
+        <a href="/sobre.html">Sobre</a>
+      </nav>
+
+      <div class="h2-header-actions">
+        <button type="button" class="h2-icon-btn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="6.5" /><line x1="20" y1="20" x2="15.7" y2="15.7" /></svg>
+        </button>
+        <a href="#" class="h2-enter-btn">
+          <span>Entrar</span>
+        </a>
+        <button type="button" class="h2-icon-btn" aria-label="Minha conta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="8" r="3.4" /><path d="M5 20c1.2-3.8 4-5.6 7-5.6s5.8 1.8 7 5.6" /></svg>
+        </button>
+        <button type="button" class="h2-nav-toggle" id="h2-nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" /></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
   <main>
-    <section class="hero">
-      <img
-        class="hero-bg"
-        src="/img/hero-maria.jpg"
-        alt="Nossa Senhora em oração diante da Basílica de São Pedro, cercada por santos, com a Bíblia e o cálice"
-      />
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <h1>Histórias que edificam.<br />Verdades que transformam.</h1>
-        <p>
-          Conteúdos profundos sobre a Igreja Católica, nossa fé e os heróis
-          que nos precederam.
-        </p>
-        <a href="/categorias.html" class="btn-gold">
-          Explorar artigos <span aria-hidden="true">→</span>
-        </a>
-      </div>
-    </section>
+    <section class="h2-hero">
+      <img class="h2-hero-bg" src="/img/home/hero-jornada.jpg" alt="Nossa Senhora contempla o mar em direção a um barco, com a Basílica de São Pedro ao fundo" />
+      <div class="h2-hero-scrim" aria-hidden="true"></div>
 
-    <section class="section container">
-      <div class="section-head">
-        <h2>Explore as Categorias</h2>
-        <a href="/categorias.html">Ver todas →</a>
+      <div class="h2-hero-quote">
+        <span class="h2-quote-mark" aria-hidden="true">&ldquo;</span>
+        <p>A barca da Igreja navega através dos séculos conduzida pelo Espírito Santo.</p>
+        <cite>— São João Paulo II</cite>
       </div>
 
-      <div class="category-grid">
-        <a href="/categorias.html#historia-da-igreja" class="category-card">
-          <span class="category-icon"><img src="/img/icons/historia-da-igreja.png" alt="" /></span>
-          <span class="category-name">História da Igreja</span>
-        </a>
-        <a href="/categorias.html#doutrina-catolica" class="category-card">
-          <span class="category-icon"><img src="/img/icons/doutrina-catolica.png" alt="" /></span>
-          <span class="category-name">Doutrina Católica</span>
-        </a>
-        <a href="/categorias.html#biblia" class="category-card">
-          <span class="category-icon"><img src="/img/icons/biblia.png" alt="" /></span>
-          <span class="category-name">Bíblia</span>
-        </a>
-        <a href="/categorias.html#nossa-senhora" class="category-card">
-          <span class="category-icon"><img src="/img/icons/nossa-senhora.png" alt="" /></span>
-          <span class="category-name">Nossa Senhora</span>
-        </a>
-        <a href="/categorias.html#vida-dos-santos" class="category-card">
-          <span class="category-icon"><img src="/img/icons/vida-dos-santos.png" alt="" /></span>
-          <span class="category-name">Vida dos Santos</span>
-        </a>
-        <a href="/categorias.html#liturgia-e-sacramentos" class="category-card">
-          <span class="category-icon"><img src="/img/icons/liturgia-e-sacramentos.png" alt="" /></span>
-          <span class="category-name">Liturgia e Sacramentos</span>
-        </a>
-        <a href="/categorias.html#vida-espiritual" class="category-card">
-          <span class="category-icon"><img src="/img/icons/vida-espiritual.png" alt="" /></span>
-          <span class="category-name">Vida Espiritual</span>
-        </a>
-        <a href="/categorias.html#formacao-catolica" class="category-card">
-          <span class="category-icon"><img src="/img/icons/formacao-catolica.png" alt="" /></span>
-          <span class="category-name">Formação Católica</span>
-        </a>
-      </div>
-    </section>
+      <div class="h2-container h2-hero-inner">
+        <div class="h2-hero-text">
+          <span class="h2-eyebrow">Embarque nesta jornada</span>
+          <h1>Descubra os tesouros da fé e <em>transforme</em> sua vida.</h1>
+          <p class="h2-hero-lead">
+            Conteúdos profundos para conhecer, viver e anunciar a Verdade que liberta e salva.
+          </p>
 
-    <section class="container content-layout">
-      <div>
-        <div class="section-head">
-          <h2>Artigos Recentes</h2>
-        </div>
-
-        <div class="article-list">
-          <article class="article-card">
-            <a href="/artigos/primeiros-cristaos-perseguicoes-imperio-romano.html" class="article-thumb">
-              <img src="/img/icons/historia-da-igreja.png" alt="" />
+          <div class="h2-hero-ctas">
+            <a href="/categorias.html" class="h2-btn h2-btn-primary">
+              Comece sua jornada <span aria-hidden="true">→</span>
             </a>
-            <div class="article-body">
-              <span class="article-category">História da Igreja</span>
-              <a href="/artigos/primeiros-cristaos-perseguicoes-imperio-romano.html">
-                <h3 class="article-title">Os primeiros cristãos e as perseguições no Império Romano</h3>
-              </a>
-              <p class="article-excerpt">
-                Descubra como os cristãos viveram sua fé com coragem diante das maiores perseguições da história.
-              </p>
-              <div class="article-meta">
-                <span>📅 12 DE MAIO DE 2024</span>
-                <span>🕐 1 MIN DE LEITURA</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="article-card">
-            <a href="/artigos/sao-francisco-de-assis.html" class="article-thumb">
-              <img src="/img/icons/vida-dos-santos.png" alt="" />
+            <a href="#" class="h2-btn h2-btn-outline">
+              <span class="h2-play-dot" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+              </span>
+              Assista ao vídeo
             </a>
-            <div class="article-body">
-              <span class="article-category">Vida dos Santos</span>
-              <a href="/artigos/sao-francisco-de-assis.html">
-                <h3 class="article-title">São Francisco de Assis: o homem que abraçou a pobreza</h3>
-              </a>
-              <p class="article-excerpt">
-                A vida, as virtudes e o legado de um dos santos mais amados da Igreja.
-              </p>
-              <div class="article-meta">
-                <span>📅 10 DE MAIO DE 2024</span>
-                <span>🕐 1 MIN DE LEITURA</span>
-              </div>
+          </div>
+
+          <div class="h2-stats">
+            <div class="h2-stat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H12v16H5.5c-.8 0-1.5-.7-1.5-1.5z" /><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H12v16h6.5c.8 0 1.5-.7 1.5-1.5z" /></svg>
+              <span><strong>+1200</strong><span>Artigos</span></span>
             </div>
-          </article>
-
-          <article class="article-card">
-            <a href="/artigos/partes-da-santa-missa.html" class="article-thumb">
-              <img src="/img/icons/liturgia-e-sacramentos.png" alt="" />
-            </a>
-            <div class="article-body">
-              <span class="article-category">Liturgia e Sacramentos</span>
-              <a href="/artigos/partes-da-santa-missa.html">
-                <h3 class="article-title">Entenda cada parte da Santa Missa e o seu profundo significado</h3>
-              </a>
-              <p class="article-excerpt">
-                Um guia completo para compreender a beleza da Santa Missa, passo por passo.
-              </p>
-              <div class="article-meta">
-                <span>📅 08 DE MAIO DE 2024</span>
-                <span>🕐 1 MIN DE LEITURA</span>
-              </div>
+            <div class="h2-stat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" /><path d="M10 8.5l6 3.5-6 3.5z" /></svg>
+              <span><strong>+350</strong><span>Vídeos</span></span>
             </div>
-          </article>
-
-          <article class="article-card">
-            <a href="/artigos/quem-foi-moises.html" class="article-thumb">
-              <img src="/img/icons/biblia.png" alt="" />
-            </a>
-            <div class="article-body">
-              <span class="article-category">Bíblia</span>
-              <a href="/artigos/quem-foi-moises.html">
-                <h3 class="article-title">Quem foi Moisés? História, missão e legado</h3>
-              </a>
-              <p class="article-excerpt">
-                A trajetória do libertador do povo de Israel e os ensinamentos que permanecem até hoje.
-              </p>
-              <div class="article-meta">
-                <span>📅 06 DE MAIO DE 2024</span>
-                <span>🕐 1 MIN DE LEITURA</span>
-              </div>
+            <div class="h2-stat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5 2 9.5 12 14l10-4.5z" /><path d="M6 12v4.5c0 1.2 2.7 2.5 6 2.5s6-1.3 6-2.5V12" /></svg>
+              <span><strong>+80</strong><span>Cursos e séries</span></span>
             </div>
-          </article>
-        </div>
-
-        <a href="/artigos.html" class="link-arrow">Ver mais artigos →</a>
-      </div>
-
-      <aside class="sidebar">
-        <div class="sidebar-box dark">
-          <span class="eyebrow">Série em Destaque</span>
-          <h3>A História da Igreja em 30 Episódios</h3>
-          <p>Uma jornada completa desde Pentecostes até os dias atuais.</p>
-          <a href="/series.html" class="btn-gold">Ver série</a>
-        </div>
-
-        <div class="sidebar-box quote">
-          <span class="eyebrow">Citação do Dia</span>
-          <blockquote data-quote-text>Carregando…</blockquote>
-          <p data-quote-author></p>
-        </div>
-
-        <div class="sidebar-box newsletter">
-          <span class="eyebrow">Receba Novidades</span>
-          <p>Assine nossa newsletter e receba conteúdos exclusivos diretamente no seu e-mail.</p>
-          <form class="newsletter-form">
-            <input type="email" required placeholder="Seu melhor e-mail" />
-            <button type="submit">Assinar</button>
-          </form>
-        </div>
-
-        <div>
-          <span class="eyebrow" style="color: var(--gold-dark)">Siga-nos</span>
-          <div class="social-links">
-            <a href="#" aria-label="YouTube">▶️</a>
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="Facebook">📘</a>
-            <a href="#" aria-label="Telegram">✈️</a>
+            <div class="h2-stat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 4 6v14l5-2 6 2 5-2V4l-5 2-6-2z" /><line x1="9" y1="4" x2="9" y2="18" /><line x1="15" y1="6" x2="15" y2="20" /></svg>
+              <span><strong>+60</strong><span>Mapas e linhas do tempo</span></span>
+            </div>
           </div>
         </div>
-      </aside>
+      </div>
+    </section>
+
+    <section class="h2-universe">
+      <div class="h2-container">
+        <div class="h2-universe-head">
+          <h2>
+            <span class="h2-title-rule" aria-hidden="true"></span>
+            Escolha seu Universo
+            <span class="h2-title-rule" aria-hidden="true"></span>
+          </h2>
+          <p>Três caminhos para uma formação completa.</p>
+        </div>
+
+        <div class="h2-universe-grid">
+          <a href="/categorias.html" class="h2-universe-card">
+            <div class="h2-universe-body">
+              <span class="h2-universe-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H12v16H5.5c-.8 0-1.5-.7-1.5-1.5z" /><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H12v16h6.5c.8 0 1.5-.7 1.5-1.5z" /></svg>
+              </span>
+              <h3>Conhecer</h3>
+              <p>A verdade que edifica a fé.</p>
+              <span class="h2-link-arrow">Explorar →</span>
+            </div>
+            <div class="h2-universe-media">
+              <img src="/img/home/universo-conhecer.jpg" alt="" />
+            </div>
+          </a>
+
+          <a href="/categorias/liturgia-e-sacramentos.html" class="h2-universe-card">
+            <div class="h2-universe-body">
+              <span class="h2-universe-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12l-1.2 8.5a4.8 4.8 0 0 1-4.8 4.1v0a4.8 4.8 0 0 1-4.8-4.1z" /><line x1="12" y1="16.6" x2="12" y2="20" /><line x1="8.5" y1="20" x2="15.5" y2="20" /></svg>
+              </span>
+              <h3>Viver</h3>
+              <p>A beleza da vida em Cristo.</p>
+              <span class="h2-link-arrow">Explorar →</span>
+            </div>
+            <div class="h2-universe-media">
+              <img src="/img/home/universo-viver.jpg" alt="" />
+            </div>
+          </a>
+
+          <a href="#" class="h2-universe-card">
+            <div class="h2-universe-body">
+              <span class="h2-universe-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4h3l6 4V6l-6 4z" /><path d="M17 9.5c1 .9 1 3.1 0 4" /><path d="M19.5 7.5c2 2.2 2 6.8 0 9" /></svg>
+              </span>
+              <h3>Anunciar</h3>
+              <p>A missão que transforma o mundo.</p>
+              <span class="h2-link-arrow">Explorar →</span>
+            </div>
+            <div class="h2-universe-media">
+              <img src="/img/home/universo-anunciar.jpg" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="h2-highlights">
+      <div class="h2-container h2-highlights-layout">
+        <div>
+          <div class="h2-section-head">
+            <h2>Destaques da Jornada</h2>
+            <a href="/artigos.html" class="h2-link-arrow">Ver todos →</a>
+          </div>
+
+          <div class="h2-article-grid">
+            <a href="/artigos/primeiros-cristaos-perseguicoes-imperio-romano.html" class="h2-article-card">
+              <span class="h2-article-thumb">
+                <img src="/img/home/destaque-primeiros-cristaos.jpg" alt="Os primeiros cristãos e as perseguições no Império Romano" />
+              </span>
+              <span class="h2-article-body">
+                <span class="h2-article-cat">História da Igreja</span>
+                <h3>Os primeiros cristãos e as perseguições em Roma</h3>
+                <span class="h2-article-meta">
+                  <span>9 min de leitura</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z" /></svg>
+                </span>
+              </span>
+            </a>
+
+            <a href="/artigos/sao-francisco-de-assis.html" class="h2-article-card">
+              <span class="h2-article-thumb">
+                <img src="/img/articles/sao-francisco-de-assis.jpg" alt="São Francisco de Assis" style="object-position: center 15%" />
+              </span>
+              <span class="h2-article-body">
+                <span class="h2-article-cat">Vida dos Santos</span>
+                <h3>São Francisco de Assis: o homem que abraçou a pobreza</h3>
+                <span class="h2-article-meta">
+                  <span>1 min de leitura</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z" /></svg>
+                </span>
+              </span>
+            </a>
+
+            <a href="/artigos/partes-da-santa-missa.html" class="h2-article-card">
+              <span class="h2-article-thumb">
+                <img src="/img/home/destaque-santa-missa.jpg" alt="Partes da Santa Missa" />
+              </span>
+              <span class="h2-article-body">
+                <span class="h2-article-cat">Liturgia e Sacramentos</span>
+                <h3>Entenda cada parte da Santa Missa</h3>
+                <span class="h2-article-meta">
+                  <span>1 min de leitura</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z" /></svg>
+                </span>
+              </span>
+            </a>
+
+            <a href="/artigos/quem-foi-moises.html" class="h2-article-card">
+              <span class="h2-article-thumb">
+                <img src="/img/home/destaque-moises.jpg" alt="Quem foi Moisés" />
+              </span>
+              <span class="h2-article-body">
+                <span class="h2-article-cat">Bíblia</span>
+                <h3>Quem foi Moisés? História, missão e legado</h3>
+                <span class="h2-article-meta">
+                  <span>1 min de leitura</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z" /></svg>
+                </span>
+              </span>
+            </a>
+
+            <a href="/artigos/maria-mae-de-deus.html" class="h2-article-card">
+              <span class="h2-article-thumb">
+                <img src="/img/home/destaque-maria.jpg" alt="Maria, Mãe de Deus" />
+              </span>
+              <span class="h2-article-body">
+                <span class="h2-article-cat">Nossa Senhora</span>
+                <h3>Maria: a Mãe de Deus e nossa Mãe também</h3>
+                <span class="h2-article-meta">
+                  <span>1 min de leitura</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z" /></svg>
+                </span>
+              </span>
+            </a>
+
+            <a href="/artigos/oracao-caminho-intimidade-com-deus.html" class="h2-article-card">
+              <span class="h2-article-thumb">
+                <img src="/img/home/destaque-oracao.jpg" alt="Oração" />
+              </span>
+              <span class="h2-article-body">
+                <span class="h2-article-cat">Vida Espiritual</span>
+                <h3>Oração: o caminho para a intimidade com Deus</h3>
+                <span class="h2-article-meta">
+                  <span>1 min de leitura</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z" /></svg>
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="h2-sidebar-col">
+          <aside class="h2-academia">
+            <img src="/img/home/academia-promo.jpg" alt="" />
+            <span class="h2-eyebrow">Academia Arca</span>
+            <p>Formação prática para comunicadores e evangelizadores.</p>
+            <ul class="h2-academia-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-9" /></svg> Comunicação Católica</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-9" /></svg> Audiovisual</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-9" /></svg> Design Católico</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-9" /></svg> Marketing e Redes Sociais</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-9" /></svg> Inteligência Artificial</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-9" /></svg> Pastoral da Comunicação</li>
+            </ul>
+            <a href="#" class="h2-btn">Entrar na Academia <span aria-hidden="true">→</span></a>
+          </aside>
+
+          <div class="h2-ebooks" id="h2-ebooks-carousel">
+            <span class="h2-eyebrow">Nossos E-books</span>
+
+            <div class="h2-ebooks-track">
+              <div class="h2-ebooks-slide is-active">
+                <span class="h2-ebooks-cover"><img src="/img/home/ebook-jornada.jpg" alt="" /></span>
+                <h4>Em breve</h4>
+                <p>Um novo material para aprofundar sua fé está a caminho.</p>
+              </div>
+              <div class="h2-ebooks-slide">
+                <span class="h2-ebooks-cover"><img src="/img/home/ebook-catecismo.jpg" alt="" /></span>
+                <h4>Em breve</h4>
+                <p>Mais um conteúdo em preparação para fortalecer sua jornada.</p>
+              </div>
+              <div class="h2-ebooks-slide">
+                <span class="h2-ebooks-cover"><img src="/img/home/ebook-concilios.jpg" alt="" /></span>
+                <h4>Em breve</h4>
+                <p>Guias e materiais exclusivos para você em breve, por aqui.</p>
+              </div>
+            </div>
+
+            <div class="h2-ebooks-footer">
+              <div class="h2-ebooks-dots">
+                <span class="is-active"></span>
+                <span></span>
+                <span></span>
+              </div>
+              <button type="button" class="h2-ebooks-next" aria-label="Ver próximo e-book">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6" /></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <div id="site-footer"></div>
+  <footer class="h2-footer">
+    <div class="h2-container">
+      <div class="h2-footer-grid">
+        <div class="h2-footer-col">
+          <div class="h2-footer-brand">
+            <img src="/img/home/logo-ship.png" alt="" />
+            <span>Arca de Maria</span>
+          </div>
+          <h4>Nós somos peregrinos.<br />Esta é a nossa jornada.</h4>
+          <p>Juntos, seguimos como Igreja, guiados pela Estrela do Mar, rumo ao porto eterno.</p>
+        </div>
 
-  <script src="/js/include.js"></script>
+        <div class="h2-footer-col">
+          <p class="h2-newsletter-label">Receba conteúdos exclusivos</p>
+          <p style="margin-bottom: 16px">Formações, novidades e materiais gratuitos para sua jornada de fé.</p>
+          <form class="h2-newsletter-form">
+            <input type="email" required placeholder="Seu melhor e-mail" />
+            <button type="submit">Quero receber</button>
+          </form>
+        </div>
+
+        <div class="h2-footer-col">
+          <p class="h2-newsletter-label">Siga-nos</p>
+          <div class="h2-social-row">
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="3" /><path d="M11 9.7v4.6l4-2.3z" fill="currentColor" stroke="none" /></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" /></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9" /><path d="M13.8 21v-6.6h2.2l.3-2.6h-2.5V9.9c0-.75.2-1.26 1.28-1.26h1.37V5.9c-.24-.03-1.05-.1-2-.1-1.98 0-3.33 1.2-3.33 3.42v1.92H8.8v2.6h2.27V21" /></svg>
+            </a>
+            <a href="#" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9" /><path d="M6.5 12.2l10-4-2.4 9.6-3.2-2.4-1.9 1.8-.3-3z" /></svg>
+            </a>
+          </div>
+          <div class="h2-footer-quote">
+            <p>&ldquo;Jesus Cristo é o mesmo ontem, hoje e eternamente.&rdquo;</p>
+            <cite>— Hebreus 13,8</cite>
+          </div>
+        </div>
+      </div>
+
+      <div class="h2-footer-bottom">
+        <span>© <span id="h2-year"></span> Arca de Maria. Todos os direitos reservados.</span>
+        <span>Desenvolvido com ♥ para a glória de Deus.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("h2-year").textContent = new Date().getFullYear();
+
+    const navToggle = document.getElementById("h2-nav-toggle");
+    const nav = document.getElementById("h2-nav");
+    navToggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("is-open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    document.querySelector(".h2-newsletter-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+    });
+
+    const ebooksCarousel = document.getElementById("h2-ebooks-carousel");
+    if (ebooksCarousel) {
+      const slides = Array.from(ebooksCarousel.querySelectorAll(".h2-ebooks-slide"));
+      const dots = Array.from(ebooksCarousel.querySelectorAll(".h2-ebooks-dots span"));
+      const nextBtn = ebooksCarousel.querySelector(".h2-ebooks-next");
+      let current = 0;
+      nextBtn.addEventListener("click", () => {
+        slides[current].classList.remove("is-active");
+        dots[current].classList.remove("is-active");
+        current = (current + 1) % slides.length;
+        slides[current].classList.add("is-active");
+        dots[current].classList.add("is-active");
+      });
+    }
+  </script>
 </body>
 </html>
